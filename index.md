@@ -15,6 +15,8 @@ and using resources efficiently and responsibly.
 > - This is the draft HPC Carpentry release, with modifications for use on the
 >   Plato HPC cluster at the University of Saskatchewan. Comments and feedback
 >   are welcome.
+> - I'd like to thank Olivier Fisette for building the vast majority of this
+>   material and making my life very simple.
 {: .callout}
 
 > ## Prerequisites
