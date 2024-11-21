@@ -6,7 +6,7 @@ permalink: /guide/
 
 ## Instructor
 
-[Olivier Fisette](https://wiki.usask.ca/x/FINaYQ), Ph.D.<br/>
+Connor Burbridge, BSc (computer Science<br/>
 Advanced Research Computing, ICT<br/>
 University of Saskatchewan
 
