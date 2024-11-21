@@ -1,0 +1,59 @@
+To demonstrate, let's use `module list`. `module list` shows all loaded software modules.
+
+```
+{{ site.remote.prompt }} module list
+```
+{: .bash}
+
+```
+Currently Loaded Modules:
+  1) CCconfig                 5) intel/2020.1.217 (t)   9) StdEnv/2020          (S)
+  2) gentoo/2020     (S)      6) ucx/1.8.0             10) flexiblascore/.3.0.4 (H)
+  3) gcccore/.9.3.0  (H)      7) libfabric/1.10.1      11) java/13.0.2          (t)
+  4) imkl/2020.1.217 (math)   8) openmpi/4.0.3    (m)  12) r/4.3.1              (t)
+
+[Some output removed for clarity]
+```
+{: .output}
+
+In this case, loading the `r` module also loaded `java/13.0.2`.
+
+```
+{{ site.remote.prompt }} module unload r
+{{ site.remote.prompt }} module list
+```
+{: .bash}
+
+```
+Currently Loaded Modules:
+  1) CCconfig             4) imkl/2020.1.217  (math)   7) libfabric/1.10.1
+  2) gentoo/2020    (S)   5) intel/2020.1.217 (t)      8) openmpi/4.0.3    (m)
+  3) gcccore/.9.3.0 (H)   6) ucx/1.8.0                 9) StdEnv/2020      (S)
+
+[Some output removed for clarity]
+```
+{: .output}
+
+So using `module unload` "un-loads" a module along with its dependencies. If we wanted to unload
+everything at once, we could run `module purge`.
+
+```
+{{ site.remote.prompt }} module load r
+{{ site.remote.prompt }} module load python
+{{ site.remote.prompt }} module purge
+```
+{: .bash}
+
+```
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig         4) imkl/2020.1.217    7) libfabric/1.10.1
+  2) gentoo/2020      5) intel/2020.1.217   8) openmpi/4.0.3
+  3) gcccore/.9.3.0   6) ucx/1.8.0          9) StdEnv/2020
+```
+{: .output}
+
+Note that `module purge` does not, by default, unload the core modules that were
+already loaded when we logged in. Therefore, `module purge` is useful to “reset”
+your environment.
