@@ -36,7 +36,7 @@ Campus wifi users must be connected to the *uofs-secure* access point.
 - Plato is not accessible from *uofs-guest* or *uofs-public* on campus.
 
 - See the following IT Knowledge Base article: [How do I connect to the
-  uofs-secure Wireless Network](https://wiki.usask.ca/x/cgDvXg).
+  uofs-secure Wireless Network](https://teamdynamix.usask.ca/TDClient/33/Portal/KB/ArticleDet?ID=433).
 
 ## USask VPN
 
@@ -45,7 +45,7 @@ Remote users must be connected to the network through the USask VPN.
 - Plato is not accessible from outside the campus without the VPN.
 
 - See the following IT Knowledge Base article: [Virtual Private Network
-  (VPN)](https://wiki.usask.ca/x/0YnDTg).
+  (VPN)](https://teamdynamix.usask.ca/TDClient/33/Portal/KB/ArticleDet?ID=185).
 
 ## Notes
 
