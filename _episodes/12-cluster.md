@@ -142,7 +142,7 @@ software, and running quick tests. It should never be used for doing
 computationally intensive work.
 
 The real work on a cluster gets done by the *worker* (or *compute*) *nodes*. Worker nodes come in
-many shapes and sizes, but generally are dedicated to long or hard tasks that require a lot of
+many shapes and sizes, but generally are dedicated to long and/or difficult tasks that require a lot of
 computational resources.
 
 All interaction with the worker nodes is handled by a specialized piece of software called a
@@ -172,7 +172,8 @@ computer's tool for actually running programs and calculations. Information abou
 stored in the computer's memory. Disk refers to all storage that can be accessed like a file system.
 This is generally storage that can hold data permanently, i.e. data is still there even if the
 computer has been restarted. While this storage can be local (a hard drive installed inside of it),
-it is more common for nodes to connect to a shared, remote fileserver or cluster of servers.
+it is more common for nodes to connect to a shared, remote fileserver or cluster of servers as is the 
+case with Usask HPC services (i.e. home directory, datastore, or project space that your group has access to). 
 
 {% include figure.html url="" max-width="40%" file="/fig/node_anatomy.png" alt="Node anatomy" caption="" %}
 
@@ -212,6 +213,12 @@ it is more common for nodes to connect to a shared, remote fileserver or cluster
 > >   ```
 > >   {{ site.local.prompt }} htop
 > >   ```
+> > * Using Windows Command Prompt
+> >   ```
+> >   C:\users\username>systeminfo
+> >   C:\Users\username>wmic cpu get DeviceId, SystemName, NumberOfCores, NumberOfLogicalProcessors
+> >   ```
+> >   
 > >   {: .bash}
 > {: .solution}
 {: .challenge}
