@@ -29,7 +29,8 @@ they started:
 
 * An engineer is using a fluid dynamics package that has an option to run in parallel. So far, this option was not utilized on a desktop. In going from 2D to 3D simulations, the simulation time has more than tripled. It might be useful to take advantage of that option or feature.
 
-In all these cases, access to more computers is needed. Those computers should be usable at the same time.
+In all these cases, access to more processing power is needed. High performance computing allows users access 
+to more powerful machines, and provides the opportunity to leverage multiple machines at once with parallel computing.
 
 > ## And what do you do?
 > 
@@ -45,7 +46,7 @@ In all these cases, access to more computers is needed. Those computers should b
 
 Today, people coding or analysing data typically work with laptops.
 
-{% include figure.html url="" max-width="20%" file="/fig/200px-laptop-openclipartorg-aoguerrero.svg"
+{% include figure.html url="" max-width="30%" file="/fig/200px-laptop-openclipartorg-aoguerrero.svg"
  alt="A standard laptop" caption="" %}
 
 Let's dissect what resources programs running on a laptop require:
@@ -55,7 +56,7 @@ Let's dissect what resources programs running on a laptop require:
 
 Schematically, this can be reduced to the following:
 
-{% include figure.html url="" max-width="30%" file="/fig/Simple_Von_Neumann_Architecture.svg" 
+{% include figure.html url="" max-width="50%" file="/fig/Simple_Von_Neumann_Architecture.svg" 
 alt="Schematic of how a computer works" caption="" %}
 
 
@@ -86,8 +87,8 @@ machine, which people typically call 'a server'.
 
 ## When one server is not enough
 
-If the computational task or analysis to complete is daunting for a single server, larger 
-agglomerations of servers are used. These go by the name of "clusters" or "super computers".
+If the computational task or analysis to complete is daunting for a single server, larger and larger
+groups of servers are used. These go by the name of "clusters" or "super computers".
 
 {% include figure.html url="" max-width="20%" 
 file="/fig/serverrack-openclipartorg-psteinb-basedon-ericlemerdy.svg" alt="A rack with servers"
