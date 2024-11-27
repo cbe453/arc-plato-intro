@@ -27,8 +27,8 @@ run where and when.
 
 The following illustration compares these tasks of a job scheduler to a waiter in a restaurant.
 If you can relate to an instance where you had to wait for a while in a queue to get in to a 
-popular restaurant, then you may now understand why sometimes your job do not start instantly
-as in your laptop.
+popular restaurant, then you may now understand why sometimes your jobs do not start instantly on 
+a cluster.
 
 {% include figure.html max-width="75%" file="/fig/restaurant_queue_manager.svg"
 alt="Compare a job scheduler to a waiter in a restaurant" caption="" %}
@@ -39,9 +39,10 @@ syntax might change, but the concepts remain the same.
 
 ## Running a batch job
 
-The most basic use of the scheduler is to run a command non-interactively. Any command (or series 
-of commands) that you want to run on the cluster is called a *job*, and the process of using a
-scheduler to run the job is called *batch job submission*.
+The most basic use of the scheduler is to run a command non-interactively, meaning once you send your 
+command to the scheduler, you will no longer be able to directly see or interact with that command and 
+whatever it is doing. Any command (or series of commands) that you want to run on the cluster is called 
+a *job*, and the process of using a scheduler to run the job is called *batch job submission*.
 
 In this case, the job we want to run is just a shell script. Let's create a demo shell script to
 run as a test. The cluster offers a number of terminal-based text editors. Use
