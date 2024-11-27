@@ -34,7 +34,7 @@ their research project - if the software version was to change (for instance, if
 updated), it might affect their results. Having access to multiple software versions allow a set of
 researchers to prevent software versioning issues from affecting their results.
 
-Dependencies are where a particular software package (or even a particular version)
+A dependency exists when a particular software package (or even a particular version)
 depends on having access to another software package (or even a particular version of
 another software package). For example, the VASP materials science software may 
 depend on having a particular version of the FFTW (Fastest Fourier Transform in the West)
@@ -149,7 +149,7 @@ So far, we've learned how to load and unload software packages. This is very use
 have not yet addressed the issue of software versioning. At some point or other, you will run into
 issues where only one particular version of some software will be suitable. Perhaps a key bugfix
 only happened in a certain version, or version X broke compatibility with a file format you use. In
-either of these example cases, it helps to be very specific about what software is loaded.
+either of these example cases, it helps to be more specific about what version of a software is loaded.
 
 Let's examine the output of `module avail gcc`.
 
