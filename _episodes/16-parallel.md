@@ -17,7 +17,7 @@ is a very important aspect of HPC systems, as parallelism is
 one of the primary tools we have to improve the performance of
 computationnal tasks.
 
-## Running the Parallel Job
+## Running a Parallel Job
 
 We will run an example that uses the Message Passing Interface (MPI)
 for parallelism -- this is a common tool on HPC systems.
