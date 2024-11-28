@@ -34,7 +34,7 @@ files using the following command:
 To copy a single file to or from the cluster, we can use `scp` ("secure copy"). The syntax can be
 a little complex for new users, but we'll break it down.
 
-To transfer *to* another computer:
+To transfer *to* another computer (in this case from a local device to a remote server):
 ```
 {{ site.local.prompt }} scp path/to/local/file.txt {{ site.remote.user }}@{{ site.remote.login }}:path/on/{{ site.remote.name }}
 ```
@@ -151,9 +151,9 @@ To download *from* another computer:
 ## Archiving files
 
 One of the biggest challenges we often face when transferring data between remote HPC systems
-is that of large numbers of files. There is an overhead to transferring each individual file 
-and when we are transferring large numbers of files these overheads combine to slow down our
-transfers to a large degree.
+is that many workflows can produce a very large number of files. There is an overhead to transferring 
+each individual file and when we are transferring large numbers of files these overheads combine 
+to slow down our transfers to a large degree.
 
 The solution to this problem is to *archive* multiple files into smaller numbers of larger files
 before we transfer the data to improve our transfer efficiency. Sometimes we will combine 
