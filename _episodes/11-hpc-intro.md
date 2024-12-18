@@ -118,11 +118,9 @@ users asked to
 > >   of all known sites, looking for matches. This "query" operation can be straightforward, but
 > >   building that database is a [monumental task](https://en.wikipedia.org/wiki/MapReduce)!
 > >   Servers are involved at every step. 
-> > - Searching for directions on a mapping website involves connecting your (A) starting and 
-> >   (B) end points by [traversing a graph](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
-> >   in search of the "shortest" path by distance, time, expense, or another metric. Converting
-> >   a map into the right form is relatively simple, but calculating all the possible routes 
-> >   between A and B is expensive. 
+> > - Watching a video on YouTube or Netflix requires querying and streaming of content from servers.
+> > - Querying AI! ChatGPT and other AI models require large amounts of processing for training and general
+> >   function.
 > >
 > > Checking email could be serial: your machine connects to one server and exchanges data. Searching
 > > by querying the database for your search term (or endpoints) could also be serial, in that one machine
