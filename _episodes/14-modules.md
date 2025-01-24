@@ -155,16 +155,24 @@ either of these example cases, it helps to be more specific about what version o
 Let's examine the output of `module avail gcc`.
 
 ```
-{{ site.remote.prompt }} module avail gcc
+{{ site.remote.prompt }} module spider gcc
 ```
 {: .bash}
 
 ```
-[Some output removed for clarity]
+    Description:
+      The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, and Ada, as well as libraries for these languages (libstdc++,
+      libgcj,...).
 
--------------------------------------- Core Modules --------------------------------------
-   gcc/8.4.0 (t)      gcc/10.2.0 (t)    gcc/11.3.0 (t)
-   gcc/9.3.0 (t,D)    gcc/10.3.0 (t)
+     Versions:
+        gcc/8.4.0
+        gcc/9.3.0
+        gcc/10.2.0
+        gcc/10.3.0
+        gcc/11.3.0
+        gcc/12.3
+        gcc/13.3
+     Other possible modules matches:
 
 [Some output removed for clarity]
 ```
