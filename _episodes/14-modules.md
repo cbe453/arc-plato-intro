@@ -83,11 +83,12 @@ so
 
 ```
 Currently Loaded Modules:
-  1) CCconfig             4) imkl/2020.1.217  (math)   7) libfabric/1.10.1
-  2) gentoo/2020    (S)   5) intel/2020.1.217 (t)      8) openmpi/4.0.3    (m)
-  3) gcccore/.9.3.0 (H)   6) ucx/1.8.0                 9) StdEnv/2020      (S)
+  1) CCconfig            4) gcc/12.3    (t)   7) libfabric/1.18.0  10) openmpi/4.1.5   (m)     13) StdEnv/2023 (S)
+  2) gentoo/2023   (S)   5) hwloc/2.9.1       8) pmix/4.2.4        11) flexiblas/3.3.1         14) mii/1.1.2
+  3) gcccore/.12.3 (H)   6) ucx/1.14.1        9) ucc/1.2.0         12) imkl/2023.2.0   (math)
 
-[Some output removed for clarity]
+[Some output removed for brevity]
+
 ```
 {: .output}
 
