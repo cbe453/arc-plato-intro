@@ -83,10 +83,9 @@ Create a submission file, requesting more than one task on a single node:
 #!/bin/bash
 {{ site.sched.comment }} --job-name=pi-montecarlo
 {% include {{ site.snippets }}/parallel/four-tasks.snip %}
-module load StdEnv/2020
-module load gcc/9.3.0
-module load python/3.8
-module load scipy-stack/2020a
+module load gcc
+module load python
+module load scipy-stack
 module load mpi4py
 
 mpirun ./pi.py
