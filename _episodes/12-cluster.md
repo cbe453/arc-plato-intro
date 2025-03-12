@@ -216,9 +216,9 @@ it is more common for nodes to connect to a shared, remote fileserver or cluster
 > {: .solution}
 {: .challenge}
 
-> ## Explore The Head Node
+> ## Explore The Login Node
 >
-> Now compare the resources of your computer with those of the head node.
+> Now compare the resources of your computer with those of the login node.
 >
 > > ## Solution
 > >
