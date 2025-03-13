@@ -223,9 +223,9 @@ case with Usask HPC services (i.e. home directory, datastore, or project space t
 > {: .solution}
 {: .challenge}
 
-> ## Explore The Head Node
+> ## Explore The Login Node
 >
-> Now compare the resources of your computer with those of the head node.
+> Now compare the resources of your computer with those of the login node.
 >
 > > ## Solution
 > >
@@ -269,10 +269,10 @@ case with Usask HPC services (i.e. home directory, datastore, or project space t
 
 {% include {{ site.snippets }}/cluster/specific-node-info.snip %}
 
-> ## Compare Your Computer, the Head Node and the Worker Node
+> ## Compare Your Computer, the Login Node and the Worker Node
 >
 > Compare your laptop's number of processors and memory with the numbers you see on the cluster 
-> head node and worker node. Discuss the differences with your neighbor. 
+> login node and worker node. Discuss the differences with your neighbor. 
 >
 > What implications do you think the differences might have on running your research work on the
 > different systems and nodes?
