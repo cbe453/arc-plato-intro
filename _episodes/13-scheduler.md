@@ -218,7 +218,7 @@ about how to make sure that you're using resources effectively in a later episod
 > > #!/bin/bash
 > > {{ site.sched.comment }} --time=00:01:00
 > > {{ site.sched.comment }} --nodes=1
-> > {{ site.sched.comment }} --ntasks-per-node=40
+> > {{ site.sched.comment }} --ntasks-per-node=32
 > > {{ site.sched.comment }} --mem=185G
 > >
 > > echo -n "This script is running on "
