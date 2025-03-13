@@ -62,7 +62,7 @@ Download the Python executable and make it executable using the following
 commands:
 
 ```
-{{ site.remote.prompt }} wget wget https://cbe453.github.io/arc-plato-intro/files/pi.py
+{{ site.remote.prompt }} wget https://cbe453.github.io/arc-plato-intro/files/pi.py
 {{ site.remote.prompt }} chmod +x pi.py
 ```
 {: .bash}
