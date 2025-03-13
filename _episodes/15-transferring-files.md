@@ -25,7 +25,7 @@ The syntax is: `wget https://some/link/to/a/file.tar.gz`. For example, download 
 files using the following command:
 
 ```
-{{ site.remote.prompt }} wget {{ site.url }}{{ site.baseurl }}/files/bash-lesson.tar.gz
+{{ site.remote.prompt }} wget https://cbe453.github.io/arc-plato-shell/files/bash-lesson.tar.gz
 ```
 {: .bash}
 
