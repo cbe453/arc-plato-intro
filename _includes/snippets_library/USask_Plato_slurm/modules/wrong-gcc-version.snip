@@ -31,10 +31,15 @@ So how do we load a non-default version of a software package? In this case, the
 only change we need to make is be more specific about the module we are loading
 by leaving in the version number after the `/`.
 
+{: .bash}
+
 ```
 {{ site.remote.prompt }} module load gcc/13.3
 {{ site.remote.prompt }} gcc --version
 ```
+
+{: .output}
+
 {: .bash}
 
 The following have been reloaded with a version change:
