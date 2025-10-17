@@ -26,9 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-ruby@v1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7'
+        ruby-version: 2.7.8 # or another available version
     - name: Install basic requirements
       run: |
         # Need this library for nokogiri
