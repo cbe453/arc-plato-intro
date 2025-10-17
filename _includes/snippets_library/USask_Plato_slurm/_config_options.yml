@@ -49,7 +49,7 @@ sched:
     time: "-t"
     queue: "-p"
   del: "scancel"
-  interactive: "srun"
+  interactive: "salloc"
   info: "sinfo"
   comment: "#SBATCH"
   hist: "sacct -u nsid"
