@@ -34,7 +34,8 @@ jobs:
       run: |
         # Need this library for nokogiri
         sudo apt-get install libxslt1-dev    
-        gem install bundler -v 2.4.22 json kramdown
+        gem install bundler -v 2.4.22 
+        gem install json kramdown
         bundle config set path '.vendor/bundle'
         bundle config build.nokogiri --use-system-libraries
         bundle install
