@@ -25,12 +25,12 @@ local:
 remote:
   name: "Plato"
   login: "plato.usask.ca"
-  host: "platolgn01"
-  node: "plato418"
+  host: "platolgn001"
+  node: "platocpu011"
   location: "University of Saskatchewan"
   homedir: "/home"
   user: "nsid"
-  prompt: "[nsid@platolgn01 ~]$"
+  prompt: "[nsid@platolgn001 ~]$"
 
 sched:
   name: "SLURM"
