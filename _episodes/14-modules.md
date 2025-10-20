@@ -152,7 +152,10 @@ issues where only one particular version of some software will be suitable. Perh
 only happened in a certain version, or version X broke compatibility with a file format you use. In
 either of these example cases, it helps to be more specific about what version of a software is loaded.
 
-Let's examine the output of `module avail gcc`.
+In the previous example, running `module load r` loaded version 4.4.0 (r/4.4.0). Since we did not 
+specify a version, a default version was loaded. The default versions may change periodically as 
+software and standard environments chanege, so we should learn to find and load specific versions of 
+software. Let's examine the output of `module avail gcc`.
 
 ```
 {{ site.remote.prompt }} module spider gcc
