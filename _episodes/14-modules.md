@@ -155,7 +155,7 @@ either of these example cases, it helps to be more specific about what version o
 In the previous example, running `module load r` loaded version 4.4.0 (r/4.4.0). Since we did not 
 specify a version, a default version was loaded. The default versions may change periodically as 
 software and standard environments change, so we should learn to find and load specific versions of 
-software. Let's examine the output of `module avail gcc`.
+software. Let's examine the output of `module spider gcc`.
 
 ```
 {{ site.remote.prompt }} module spider gcc
