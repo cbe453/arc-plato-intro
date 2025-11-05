@@ -155,29 +155,34 @@ either of these example cases, it helps to be more specific about what version o
 In the previous example, running `module load r` loaded version 4.4.0 (r/4.4.0). Since we did not 
 specify a version, a default version was loaded. The default versions may change periodically as 
 software and standard environments change, so we should learn to find and load specific versions of 
-software. Let's examine the output of `module spider gcc`.
+software. Let's examine the output of `module spider vmd`. VMD is a popular tool in chemistry used
+for visualization and analysis of large biomolecular systems.
 
 ```
-{{ site.remote.prompt }} module spider gcc
+{{ site.remote.prompt }} module spider vmd
 ```
 {: .bash}
 
 ```
+----------------------------------------------------------------------------------------------------------
+  vmd:
+----------------------------------------------------------------------------------------------------------
     Description:
-      The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, and Ada, as well as libraries for these languages (libstdc++,
-      libgcj,...).
+      VMD is a molecular visualization program for displaying, animating, and analyzing large
+      biomolecular systems using 3-D graphics and built-in scripting.
 
      Versions:
-        gcc/8.4.0
-        gcc/9.3.0
-        gcc/10.2.0
-        gcc/10.3.0
-        gcc/11.3.0
-        gcc/12.3
-        gcc/13.3
-     Other possible modules matches:
+        vmd/1.9.3
+        vmd/1.9.4a43
+        vmd/1.9.4a57
 
-[Some output removed for clarity]
+----------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "vmd" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider vmd/1.9.4a57
+----------------------------------------------------------------------------------------------------------
 ```
 {: .output}
 
