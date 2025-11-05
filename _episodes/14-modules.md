@@ -155,34 +155,55 @@ either of these example cases, it helps to be more specific about what version o
 In the previous example, running `module load r` loaded version 4.4.0 (r/4.4.0). Since we did not 
 specify a version, a default version was loaded. The default versions may change periodically as 
 software and standard environments change, so we should learn to find and load specific versions of 
-software. Let's examine the output of `module spider vmd`. VMD is a popular tool in chemistry used
-for visualization and analysis of large biomolecular systems.
+software. Let's examine the output of `module spider gromacs`. GROMACS is a popular open-source suite 
+of tools for high-performance molecular dynamics and output analysis
+
 
 ```
-{{ site.remote.prompt }} module spider vmd
+{{ site.remote.prompt }} module spider gromacs
 ```
 {: .bash}
 
 ```
 ----------------------------------------------------------------------------------------------------------
-  vmd:
+  gromacs:
 ----------------------------------------------------------------------------------------------------------
     Description:
-      VMD is a molecular visualization program for displaying, animating, and analyzing large
-      biomolecular systems using 3-D graphics and built-in scripting.
+      GROMACS is a versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations
+      of motion for systems with hundreds to millions of particles. This is a CPU only build, containing
+      both MPI and threadMPI builds.
 
      Versions:
-        vmd/1.9.3
-        vmd/1.9.4a43
-        vmd/1.9.4a57
+        gromacs/2016.6
+        gromacs/2020.4
+        gromacs/2020.6
+        gromacs/2021.2
+        gromacs/2021.4
+        gromacs/2021.6
+        gromacs/2022.2
+        gromacs/2022.3
+        gromacs/2023
+        gromacs/2023.2
+        gromacs/2023.3
+        gromacs/2023.5
+        gromacs/2024.1
+        gromacs/2024.4
+     Other possible modules matches:
+        gromacs-colvars  gromacs-cp2k  gromacs-ls  gromacs-plumed  gromacs-ramd  gromacs-swaxs
 
 ----------------------------------------------------------------------------------------------------------
-  For detailed information about a specific "vmd" package (including how to load the modules) use the module's full name.
+  To find other possible module matches execute:
+
+      $ module -r spider '.*gromacs.*'
+
+----------------------------------------------------------------------------------------------------------
+  For detailed information about a specific "gromacs" package (including how to load the modules) use the module's full name.
   Note that names that have a trailing (E) are extensions provided by other modules.
   For example:
 
-     $ module spider vmd/1.9.4a57
+     $ module spider gromacs/2024.4
 ----------------------------------------------------------------------------------------------------------
+
 ```
 {: .output}
 
