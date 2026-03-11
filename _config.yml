@@ -32,7 +32,7 @@ remote:
   node: "platocpu057"
   location: "University of Saskatchewan"
   homedir: "/home"
-  user: "nsid"
+  user: "abc123"
   prompt: "[nsid@platolgn001 ~]$"
 
 sched:
