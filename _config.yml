@@ -45,7 +45,7 @@ sched:
     testing: "testing"
   status: "squeue"
   flag:
-    user: "-u nsid"
+    user: "-u abc123"
     interactive: ""
     histdetail: "-l -j"
     name: "-J"
@@ -57,7 +57,7 @@ sched:
   interactive: "srun"
   info: "sinfo"
   comment: "#SBATCH"
-  hist: "sacct -u nsid"
+  hist: "sacct -u abc123"
 
 #------------------------------------------------------------
 # Values for this lesson
