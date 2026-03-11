@@ -297,7 +297,7 @@ Now cancel the job with its job number (printed in your terminal). A clean retur
 prompt indicates that the request to cancel the job was successful.
 
 ```
-{{ site.remote.prompt }} {{site.sched.del }} 726557
+{{ site.remote.prompt }} {{site.sched.del }} 4976551
 # ... Note that it might take a minute for the job to disappear from the queue ...
 {{ site.remote.prompt }} {{ site.sched.status }} {{ site.sched.flag.user }}
 ```
