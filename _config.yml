@@ -33,7 +33,7 @@ remote:
   location: "University of Saskatchewan"
   homedir: "/home"
   user: "abc123"
-  prompt: "[nsid@platolgn001 ~]$"
+  prompt: "[abc123@platolgn001 ~]$"
 
 sched:
   name: "SLURM"
